@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "354726762654",
+    "project_id": "izzy-note",
+    "storage_bucket": "izzy-note.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354726762654:android:7446f98b7fb58b0485438f",
+        "android_client_info": {
+          "package_name": "com.example.izzy_note"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8IZwOz2OB1T1sBfBB-CVq3rV43d4oa9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
