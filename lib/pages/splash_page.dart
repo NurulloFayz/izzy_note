@@ -12,21 +12,13 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
 
-  checkAuth() {
-    Timer(const Duration(seconds: 4), () {
-      if(!Auth.isLoggedin()) {
-        Navigator.pushReplacementNamed(context, SignUpPage.id);
-      } else {
-        Navigator.pushReplacementNamed(context, MyPages.id);
-      }
-    });
-  }
+  ViewSplashPage view = ViewSplashPage();
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    checkAuth();
+    view.checkAuth(context);
   }
   @override
   Widget build(BuildContext context) {

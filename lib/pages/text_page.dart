@@ -3,6 +3,7 @@
 
 import '../export_libs/export_libs.dart';
 
+
 class TextPage extends StatefulWidget {
   static const String id = 'textpage';
   const TextPage(this.title,this.text,this.noteId,{super.key});

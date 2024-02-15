@@ -26,7 +26,7 @@ class _CreatePageState extends State<CreatePage> {
             },
             child: Text('Save',style: TextStyle(
               fontSize: MediaQuery.of(context).size.height/40,
-              color: Colors.black
+              color: Colors.green,fontWeight: FontWeight.bold
             ),),
           ),
 

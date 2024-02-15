@@ -10,21 +10,27 @@ export '../utils/dialog.dart';
 export '../pages/auth/sign_up.dart';
 export '../pages/auth/signin.dart';
 export '../utils/toast.dart';
-export '../../controllers/view_signup.dart';
-export '../../controllers/view_signin.dart';
-export '../controllers/view_createpage.dart';
 export 'package:flutter/services.dart';
 export 'package:firebase_database/ui/firebase_animated_list.dart';
 export 'package:provider/provider.dart';
-export '../controllers/view_homepage.dart';
 export 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 export 'dart:async';
-export '../controllers/view_text_page.dart';
 export 'package:firebase_auth/firebase_auth.dart';
 export 'package:firebase_core/firebase_core.dart';
 export 'package:fluttertoast/fluttertoast.dart';
 export 'package:izzy_note/pages/home_page.dart';
 export 'package:izzy_note/pages/splash_page.dart';
+export '../views/view_text_page.dart';
+export '../../views/view_signup.dart';
+export '../../views/view_signin.dart';
+export '../views/view_createpage.dart';
+export '../views/view_homepage.dart';
+export '../views/view_splashpage.dart';
+
+
+
+
+
 
 
 
