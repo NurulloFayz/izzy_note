@@ -44,11 +44,10 @@ class _HomePageState extends State<HomePage> {
           builder: (context,view,index) =>
               Column(
                 children: [
-                  SizedBox(height: MediaQuery.of(context).size.height/40,),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Notes',style: TextStyle(fontSize: MediaQuery.of(context).size.height/12,
+                      SizedBox(width: MediaQuery.of(context).size.width/20,),
+                      Text('Notes',style: TextStyle(fontSize: MediaQuery.of(context).size.height/14,
                           fontWeight: FontWeight.bold
                       ),)
                     ],

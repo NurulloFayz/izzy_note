@@ -1,5 +1,7 @@
 
 
+import 'package:google_fonts/google_fonts.dart';
+
 import '../../export_libs/export_libs.dart';
 
 class SignInPage extends StatefulWidget {
@@ -28,11 +30,15 @@ class _SignInPageState extends State<SignInPage> {
                 ),
                 child: TextField(
                   controller: view.email,
-                  style: TextStyle(fontSize: MediaQuery.of(context).size.height/35),
+                  style: GoogleFonts.openSans(fontSize: MediaQuery.of(context).size.height/45),
                   decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(MediaQuery.of(context).size.height/40),
                       hintText:'email',
-                      hintStyle: TextStyle(fontSize: MediaQuery.of(context).size.height/45,color: Colors.grey),
+                      filled: true,
+                      fillColor: Colors.grey.withOpacity(0.3),
+                      hintStyle: GoogleFonts.openSans(fontSize: MediaQuery.of(context).size.height/45,color: Colors.grey),
                       border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
                           borderRadius: BorderRadius.circular(10)
                       )
                   ),
@@ -45,49 +51,57 @@ class _SignInPageState extends State<SignInPage> {
                 ),
                 child: TextField(
                   controller: view.password,
-                  style: TextStyle(fontSize: MediaQuery.of(context).size.height/35),
+                  style: GoogleFonts.openSans(fontSize: MediaQuery.of(context).size.height/45),
                   decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(MediaQuery.of(context).size.height/40),
                       hintText:'password',
-                      hintStyle: TextStyle(fontSize: MediaQuery.of(context).size.height/45,color: Colors.grey),
+                      filled: true,
+                      fillColor: Colors.grey.withOpacity(0.3),
+                      hintStyle: GoogleFonts.openSans(fontSize: MediaQuery.of(context).size.height/45,color: Colors.grey),
                       border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
                           borderRadius: BorderRadius.circular(10)
                       )
                   ),
                 ),
               ),
-              SizedBox(height: MediaQuery.of(context).size.height/20,),
-              Container(
-                margin: EdgeInsets.only(right: MediaQuery.of(context).size.width/30,
-                  left: MediaQuery.of(context).size.width/30,
-                ),
-                child: MaterialButton(
+              SizedBox(height: MediaQuery.of(context).size.height/15,),
+              GestureDetector(
+                onTap: () {
+                  view.signIn(context);
+                },
+                child: Container(
+                  margin: EdgeInsets.only(right: MediaQuery.of(context).size.width/30,
+                    left: MediaQuery.of(context).size.width/30,
+                  ),
                   height: MediaQuery.of(context).size.height/12,
-                  minWidth: MediaQuery.of(context).size.width,
-                  color: Colors.green,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                  onPressed: (){
-                    view.signIn(context);
-                  },
-                  child: Text('SIGN IN',style: TextStyle(fontSize: MediaQuery.of(context).size.height/40,
-                      color: Colors.white
-                  ),),
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.green
+                  ),
+                  child: Center(
+                    child: Text('LOG IN',style:  GoogleFonts.openSans(fontSize: MediaQuery.of(context).size.height/40,
+                        color: Colors.white
+                    ),),
+                  ),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height/20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Don't have an account",style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height/40,
+                  Text("Don't have an account?",style: GoogleFonts.openSans(
+                      fontSize: MediaQuery.of(context).size.height/45,
                       color: Colors.grey,fontWeight: FontWeight.bold
                   ),),
                   TextButton(
                     onPressed: (){
                       view.navigateToSignUpPage(context);
                     },
-                    child: Text('SIGN UP',style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height/40,
-                        color: Colors.black
+                    child: Text('SIGN UP',style:  GoogleFonts.openSans(
+                        fontSize: MediaQuery.of(context).size.height/45,
+                        color: Colors.black,fontWeight: FontWeight.w500
                     ),),
                   )
                 ],
